@@ -1,0 +1,29 @@
+{% extends "templatesFinal/Padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1> AGREGAR PROFESOR</h1>
+{% endblock %}
+
+
+{% block contenido_que_cambia %}
+<h2>ESTE ES UN TEMPLATE PARA AGREGAR PROFESORES</h2>
+
+<form action="#" method="POST"> {% csrf_token %}
+
+    <table>
+
+        {{ form.as_table }}
+    
+    </table>
+
+    <input type="submit" value="GuardarPersona">
+
+
+
+
+</form>
+
+{% endblock %}
+

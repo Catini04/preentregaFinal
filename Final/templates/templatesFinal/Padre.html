@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no" />
+    
+    <link rel="stylesheet" href="{% static 'Final/css/styles.css' %}">
+    <title>PADRE</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="navbar">
+            <img src="../../static/Final/images/python3.png" class="logo" alt="Main logo">
+            
+
+        
+        <ul>
+            <li><a href="#"> Inicio</a></li>
+            <li><a href="#"> Profesores </a></li>
+            <li><a href="#"> Estudiantes</a></li>
+            <li><a href="#"> Entregables</a></li>
+
+
+        </ul>
+        
+        </div>
+        {% block titulo %}
+
+        {% endblock %}
+
+    </div>
+
+
+
+
+    {% block contenido_que_cambia %}
+    
+    {% endblock %}
+</body>
+</html>

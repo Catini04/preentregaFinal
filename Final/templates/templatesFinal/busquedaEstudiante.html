@@ -1,0 +1,22 @@
+{% extends "templatesFinal/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">BUSQUEDA DE ESTUDIANTES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<h3>{{ mensaje }}</h3>
+
+<form action="{% url 'buscar' %}" method="GET"> 
+
+    <input type="number" name="estudiante" id="estudiante" placeholder="INSERTE ESTUDIANTE">
+
+    <input type="submit" value="buscar estudiante">
+
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "templatesFinal/Padre.html" %}
+{% load static %}
+
+{%block titulo%}
+<br>
+<br>
+<h1>TITULO ESTUDIANTE</h1>
+<br>
+<br>
+
+<h2>{{ mensaje }}</h2>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+<ul>
+    <h1>LISTADO DE ESTUDIANTES</h1>
+
+    {% for estudiante in estudiantes %}
+    <li>{{ estudiante.nombre }} {{ estudiante.apellido }} - {{ estudiante.}}</li>
+
+    
+    {% endfor %}
+
+
+</ul>
+
+
+
+{% endblock %}

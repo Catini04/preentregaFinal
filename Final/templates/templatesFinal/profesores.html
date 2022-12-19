@@ -1,0 +1,23 @@
+{% extends "templatesFinal/Padre.html" %}
+{% load static %}
+
+{%block titulo%}
+<h1>TITULO PARA PROFES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+<ul>
+    <h1>LISTADO DE PROFES</h1>
+
+    {% for profesor in profesores %}
+    <li>{{ profesor.nombre }} {{ profesor.apellido }} - {{ profesor.comision }}</li>
+
+    
+    {% endfor %}
+
+
+</ul>
+
+<h2>{{ mensaje }}</h2>
+
+{% endblock %}
